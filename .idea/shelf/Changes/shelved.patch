@@ -1,0 +1,289 @@
+Index: Chapter02/eda.ipynb
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Chapter02/eda.ipynb b/Chapter02/eda.ipynb
+--- a/Chapter02/eda.ipynb	(revision 3c7f37101e4456ba1a02970ff6732cd5bbbcebfc)
++++ b/Chapter02/eda.ipynb	(date 1731503293499)
+@@ -9,9 +9,12 @@
+   },
+   {
+    "cell_type": "code",
+-   "execution_count": 1,
+-   "metadata": {},
+-   "outputs": [],
++   "metadata": {
++    "ExecuteTime": {
++     "end_time": "2024-11-13T13:00:47.486331Z",
++     "start_time": "2024-11-13T13:00:47.481935Z"
++    }
++   },
+    "source": [
+     "%matplotlib inline\n",
+     "\n",
+@@ -29,7 +32,17 @@
+     "\n",
+     "pd.set_option('display.max_rows', 2)\n",
+     "pd.set_option('display.max_columns', 7)"
+-   ]
++   ],
++   "outputs": [
++    {
++     "name": "stdout",
++     "output_type": "stream",
++     "text": [
++      "test\n"
++     ]
++    }
++   ],
++   "execution_count": 3
+   },
+   {
+    "cell_type": "markdown",
+@@ -40,11 +53,34 @@
+   },
+   {
+    "cell_type": "code",
+-   "execution_count": 2,
+-   "metadata": {},
++   "metadata": {
++    "ExecuteTime": {
++     "end_time": "2024-11-13T13:06:52.912153Z",
++     "start_time": "2024-11-13T13:06:52.903390Z"
++    }
++   },
++   "source": [
++    "A = pd.read_csv('A.csv', parse_dates=True, index_col=0)\n",
++    "A"
++   ],
+    "outputs": [
+     {
+      "data": {
++      "text/plain": [
++       "                    Open          High           Low         Close  \\\n",
++       "Date                                                                 \n",
++       "2015-05-15  18251.970703  18272.720703  18215.070313  18272.560547   \n",
++       "...                  ...           ...           ...           ...   \n",
++       "2020-05-14  23049.060547  23630.859375  22789.619141  23625.339844   \n",
++       "\n",
++       "               Adj Close     Volume  \n",
++       "Date                                 \n",
++       "2015-05-15  18272.560547  108220000  \n",
++       "...                  ...        ...  \n",
++       "2020-05-14  23625.339844  472700000  \n",
++       "\n",
++       "[1211 rows x 6 columns]"
++      ],
+       "text/html": [
+        "<div>\n",
+        "<style scoped>\n",
+@@ -113,40 +149,45 @@
+        "</table>\n",
+        "<p>1211 rows × 6 columns</p>\n",
+        "</div>"
+-      ],
+-      "text/plain": [
+-       "                    Open          High           Low         Close  \\\n",
+-       "Date                                                                 \n",
+-       "2015-05-15  18251.970703  18272.720703  18215.070313  18272.560547   \n",
+-       "...                  ...           ...           ...           ...   \n",
+-       "2020-05-14  23049.060547  23630.859375  22789.619141  23625.339844   \n",
+-       "\n",
+-       "               Adj Close     Volume  \n",
+-       "Date                                 \n",
+-       "2015-05-15  18272.560547  108220000  \n",
+-       "...                  ...        ...  \n",
+-       "2020-05-14  23625.339844  472700000  \n",
+-       "\n",
+-       "[1211 rows x 6 columns]"
+       ]
+      },
+-     "execution_count": 2,
++     "execution_count": 11,
+      "metadata": {},
+      "output_type": "execute_result"
+     }
+    ],
+-   "source": [
+-    "A = pd.read_csv('A.csv', parse_dates=True, index_col=0)\n",
+-    "A"
+-   ]
++   "execution_count": 11
+   },
+   {
+    "cell_type": "code",
+-   "execution_count": 3,
+-   "metadata": {},
++   "metadata": {
++    "ExecuteTime": {
++     "end_time": "2024-11-13T13:06:54.609668Z",
++     "start_time": "2024-11-13T13:06:54.600894Z"
++    }
++   },
++   "source": [
++    "B = pd.read_csv('B.csv', parse_dates=True, index_col=0); \n",
++    "B"
++   ],
+    "outputs": [
+     {
+      "data": {
++      "text/plain": [
++       "                   Open         High          Low       Close   Adj Close  \\\n",
++       "Date                                                                        \n",
++       "2015-05-15  2122.070068  2123.889893  2116.810059  2122.72998  2122.72998   \n",
++       "...                 ...          ...          ...         ...         ...   \n",
++       "2020-05-14  2794.540039  2852.800049  2766.639893  2852.50000  2852.50000   \n",
++       "\n",
++       "                Volume  \n",
++       "Date                    \n",
++       "2015-05-15  3092080000  \n",
++       "...                ...  \n",
++       "2020-05-14  5641920000  \n",
++       "\n",
++       "[1209 rows x 6 columns]"
++      ],
+       "text/html": [
+        "<div>\n",
+        "<style scoped>\n",
+@@ -215,135 +256,27 @@
+        "</table>\n",
+        "<p>1209 rows × 6 columns</p>\n",
+        "</div>"
+-      ],
+-      "text/plain": [
+-       "                   Open         High          Low       Close   Adj Close  \\\n",
+-       "Date                                                                        \n",
+-       "2015-05-15  2122.070068  2123.889893  2116.810059  2122.72998  2122.72998   \n",
+-       "...                 ...          ...          ...         ...         ...   \n",
+-       "2020-05-14  2794.540039  2852.800049  2766.639893  2852.50000  2852.50000   \n",
+-       "\n",
+-       "                Volume  \n",
+-       "Date                    \n",
+-       "2015-05-15  3092080000  \n",
+-       "...                ...  \n",
+-       "2020-05-14  5641920000  \n",
+-       "\n",
+-       "[1209 rows x 6 columns]"
+       ]
+      },
+-     "execution_count": 3,
++     "execution_count": 12,
+      "metadata": {},
+      "output_type": "execute_result"
+     }
+    ],
+-   "source": [
+-    "B = pd.read_csv('B.csv', parse_dates=True, index_col=0); \n",
+-    "B"
+-   ]
++   "execution_count": 12
+   },
+   {
+-   "cell_type": "code",
+-   "execution_count": 4,
+    "metadata": {},
+-   "outputs": [
+-    {
+-     "data": {
+-      "text/html": [
+-       "<div>\n",
+-       "<style scoped>\n",
+-       "    .dataframe tbody tr th:only-of-type {\n",
+-       "        vertical-align: middle;\n",
+-       "    }\n",
+-       "\n",
+-       "    .dataframe tbody tr th {\n",
+-       "        vertical-align: top;\n",
+-       "    }\n",
+-       "\n",
+-       "    .dataframe thead th {\n",
+-       "        text-align: right;\n",
+-       "    }\n",
+-       "</style>\n",
+-       "<table border=\"1\" class=\"dataframe\">\n",
+-       "  <thead>\n",
+-       "    <tr style=\"text-align: right;\">\n",
+-       "      <th></th>\n",
+-       "      <th>Open</th>\n",
+-       "      <th>High</th>\n",
+-       "      <th>Low</th>\n",
+-       "      <th>Close</th>\n",
+-       "      <th>Adj Close</th>\n",
+-       "      <th>Volume</th>\n",
+-       "    </tr>\n",
+-       "    <tr>\n",
+-       "      <th>Date</th>\n",
+-       "      <th></th>\n",
+-       "      <th></th>\n",
+-       "      <th></th>\n",
+-       "      <th></th>\n",
+-       "      <th></th>\n",
+-       "      <th></th>\n",
+-       "    </tr>\n",
+-       "  </thead>\n",
+-       "  <tbody>\n",
+-       "    <tr>\n",
+-       "      <th>2015-05-15</th>\n",
+-       "      <td>12.46</td>\n",
+-       "      <td>13.090000</td>\n",
+-       "      <td>12.350000</td>\n",
+-       "      <td>12.380000</td>\n",
+-       "      <td>12.380000</td>\n",
+-       "      <td>0</td>\n",
+-       "    </tr>\n",
+-       "    <tr>\n",
+-       "      <th>...</th>\n",
+-       "      <td>...</td>\n",
+-       "      <td>...</td>\n",
+-       "      <td>...</td>\n",
+-       "      <td>...</td>\n",
+-       "      <td>...</td>\n",
+-       "      <td>...</td>\n",
+-       "    </tr>\n",
+-       "    <tr>\n",
+-       "      <th>2020-05-14</th>\n",
+-       "      <td>35.16</td>\n",
+-       "      <td>39.279999</td>\n",
+-       "      <td>32.330002</td>\n",
+-       "      <td>32.610001</td>\n",
+-       "      <td>32.610001</td>\n",
+-       "      <td>0</td>\n",
+-       "    </tr>\n",
+-       "  </tbody>\n",
+-       "</table>\n",
+-       "<p>1206 rows × 6 columns</p>\n",
+-       "</div>"
+-      ],
+-      "text/plain": [
+-       "             Open       High        Low      Close  Adj Close  Volume\n",
+-       "Date                                                                 \n",
+-       "2015-05-15  12.46  13.090000  12.350000  12.380000  12.380000       0\n",
+-       "...           ...        ...        ...        ...        ...     ...\n",
+-       "2020-05-14  35.16  39.279999  32.330002  32.610001  32.610001       0\n",
+-       "\n",
+-       "[1206 rows x 6 columns]"
+-      ]
+-     },
+-     "execution_count": 4,
+-     "metadata": {},
+-     "output_type": "execute_result"
+-    }
+-   ],
++   "cell_type": "markdown",
+    "source": [
+     "C = pd.read_csv('C.csv', parse_dates=True, index_col=0); \n",
+     "C"
+    ]
+   },
+   {
+-   "cell_type": "markdown",
+    "metadata": {},
+-   "source": [
+-    "# Step 2 - Data wrangling/munging"
+-   ]
++   "cell_type": "markdown",
++   "source": "# Step 2 - Data wrangling/munging"
+   },
+   {
+    "cell_type": "code",
