@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b44d4987-c5e1-4173-92d9-ac8954b3c694" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Chapter02/eda.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter02/eda.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter03/numpy.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter03/numpy.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter04/df.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter04/df.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter04/df.json" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter04/df.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter04/pandas.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter04/pandas.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter05/matplotlib.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter05/matplotlib.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter06/sklearn.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter06/sklearn.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter06/statsmodels_pmdarima_fbprophet.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter06/statsmodels_pmdarima_fbprophet.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,20 +46,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/wjw/Desktop/Hands-On-Financial-Trading-with-Python",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/wjw/Desktop/Hands-On-Financial-Trading-with-Python&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -72,6 +80,9 @@
       <workItem from="1731500625701" duration="828000" />
       <workItem from="1731501458788" duration="846000" />
       <workItem from="1731502323462" duration="1990000" />
+      <workItem from="1731504320446" duration="13134000" />
+      <workItem from="1732539050684" duration="3450000" />
+      <workItem from="1732886397143" duration="5316000" />
     </task>
     <servers />
   </component>
@@ -94,8 +105,23 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
           <url>notebook:///Users/wjw/Desktop/Hands-On-Financial-Trading-with-Python/Chapter02/eda.ipynb</url>
-          <line>35</line>
+          <line>38</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
+          <url>notebook:///Users/wjw/Desktop/Hands-On-Financial-Trading-with-Python/Chapter02/eda.ipynb</url>
+          <line>65</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
+          <url>notebook:///Users/wjw/Desktop/Hands-On-Financial-Trading-with-Python/Chapter02/eda.ipynb</url>
+          <line>78</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
+          <url>notebook:///Users/wjw/Desktop/Hands-On-Financial-Trading-with-Python/Chapter04/pandas.ipynb</url>
+          <line>84</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
